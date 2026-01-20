@@ -1,13 +1,23 @@
-# Gradio + OpenAI Chatbot (Streaming)
+````md
+# Gradio OpenAI Chatbot (Streaming)
 
-A simple chatbot web UI built with **Gradio ChatInterface** and the **OpenAI Python SDK**, with **streaming** responses.
+Small Gradio chat app that calls OpenAI and streams the response.
 
-## What it does
-- Launches a local Gradio chat app in your browser
-- Sends your message + chat history to the OpenAI Chat Completions API
-- Streams tokens back live so the response appears gradually
+## Setup
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r Requirements.txt
+````
 
----
+Create a `.env` file:
 
-## Project structure
+```bash
+OPENAI_API_KEY=your_key_here
+```
 
+## Run
+
+```bash
+python gradio_setup.py
+```
